@@ -7,3 +7,4 @@ Function inherits from the Object prototype and they can be assigned key: value.
 Second class citizen  does not exist in JavaScript. 
 
 
+https://kaykfash.github.io/DOM--Assignment/
