@@ -1,0 +1,57 @@
+Explain variable scoping with examples
+Explain with/in objects
+…  conditionals
+… functions
+
+
+Variable scoping in JavaScript is determining where your variables are accessible in your code during runtime.
+This means that the accessibility of your code is determined is controlled by the variable declaration
+There are two types of Scope:
+Local Scope: Variables declared within a function are in the local scope. Variables in local scope are only accessible within the function in which they are defined.
+Global Scope: A variable is in the global scope if it is declared outside a function, and you can access any variable declared in the global scope from any other scope.
+
+Example:
+Global scope with functions
+// Example of Global Scope Using functions
+const welcomeText='Welcome';
+
+function greetings () {
+    console.log(welcomeText);
+}
+
+greetings();
+
+// In the above program, const welcomeText is declared at the top of a program and is a global variable. It means the variable a can be used anywhere in the program.
+
+
+// Example of Local Scope Using functions
+
+const shirtSize=20;
+
+function totalSize () {
+  const shortSize=40;
+  
+}
+
+totalSize();
+console.log(shortSize+shortSize)
+
+// The above will output Error: shortSize is not defined, this is because const shirtSize is a global variable and const shortSize is a local variable,const shortSize can be accessed only inside the function totalSize. Hence, when we try to access const shortSize outside of the function, an error occurs.
+
+
+const dogName= 'charley'
+// const breed = 'Dobermann';
+
+
+if (true) {
+    // dogName is in the global scope because of the 'const' keyword
+
+    const dogName = 'charley';
+
+
+ // const breed = 'Dobermann';
+//breed is declared in the local scope
+}
+
+console.log(dogName); // logs 'charley'
+console.log(breed); // Uncaught ReferenceError: likes is not defined

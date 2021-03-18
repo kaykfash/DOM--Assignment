@@ -77,3 +77,4 @@ console.log(mssg.getAttribute('class'));
 const mainTitle= document.querySelector('h1');
 console.log(mainTitle);
 title.style.backgroundColor='red'
+
