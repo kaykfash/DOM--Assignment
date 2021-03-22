@@ -1,0 +1,66 @@
+.elements{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: 0 auto;
+    /* background-color: aquamarine; */
+    padding: 40px;
+   max-width:100%;
+}
+
+.Fire{
+    padding: 10px;
+    /* margin-left: 80px; */
+    
+}
+
+.Water{
+    padding: 10px;
+    /* margin-left: 80px; */
+}
+
+.Air{
+    padding: 10px;
+    /* margin-left: 80px; */
+}
+
+.Earth{
+    padding: 10px;
+    /* margin-left: 80px; */
+}
+
+button{
+    padding: 15px;
+    border: none;
+    color: white;
+    background-color: crimson;
+
+}
+
+button:hover{
+    background-color: #1f5d49;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.firenation-image{
+display: none;
+}
+
+.waternation-image{
+    display: none;
+    }
+
+.airnation-image{
+    display: none;
+}
+
+.earthnation-image{
+    display: none;
+}
+.show{
+    display: block;
+}
+

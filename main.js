@@ -1,80 +1,110 @@
-// QUERY SELECTOR
-// Query selector and query selector all
-const para= document.querySelector
-('p');
-console.log(para);
-
-const headOne= document.querySelector('h1')
-console.log(headOne)
- 
-// CLASS NAME
-const mainText= document.querySelector('.main-text');
-console.log(mainText)
-
-const divName= document.querySelector('div.second-line');
-console.log(divName)
-
-// USING THE QUERYSELECTALL
-const paras= document.querySelectorAll('p');
-console.log(paras);
-console.log(paras[3]);
-
-const errors= document.querySelectorAll('.error');
-console.log(errors);
-console.log(errors[1]);
-
-
-//Get an element by ID
-const title= document.getElementById('page-title');
+const title = document.getElementsByTagName('h1')[0]
 console.log(title)
-
-const introText= document.getElementById('intro-text')
-console.log(introText)
-
-//Get an element by class name
-const errorClass= document.getElementsByClassName('error');
-console.log(errorClass);
-
-//get elements by their tag name
-
-const paraTags= document.getElementsByTagName('p')
-console.log(paraTags)
-console.log(paraTags[3])
+ title.addEventListener('mouseover', function(){
+      title.style.color='red'
+      title.addEventListener('mouseout',function(){
+        title.style.color='black' 
+      })
+ })
 
 
-// Changing the text inside HTML(Innertext)
-
-const firstPara= document.querySelector('p');
-firstPara.innerText='Oha soup is lit!';
-
-//  To append to the text
-firstPara.innerText+='Oha soup is lit!'; 
-
-// To locate the HTML in a div
-const content= document.querySelector('.content')
-console.log (content.innerHTML);
-
-// To change the HTML content in the div 
-content.innerHTML= '<h2>This is a new text</h2>';
-
-// To locate attributes in HTML
-
-const link= document.querySelector('a');
-console.log(link.getAttribute('href'));
-
-// To set/change the attributes
-link.setAttribute('href', 'https://www.goal.com');
-link.innerText='This is a football site';
 
 
-const mssg= document.querySelector('p');
+ const headingOne = document.querySelectorAll('h2')[0]
+console.log(headingOne)
+ headingOne.addEventListener('mouseover', function(){
+      headingOne.style.color='red'
+      headingOne.addEventListener('mouseout',function(){
+        headingOne.style.color='black' 
+      })
+ })
 
-console.log(mssg.getAttribute('class'));
-// mssg.setAttribute('class', 'success');
-// mssg.setAttribute('style','color:green;');
+ const headingTwo =  document.querySelectorAll('h2')[1]
+ console.log(headingTwo)
+  headingTwo.addEventListener('mouseover', function(){
+       headingTwo.style.color='red'
+       headingTwo.addEventListener('mouseout',function(){
+         headingTwo.style.color='black' 
+       })
+  })
+ 
+
+  
+ const headingThree=  document.querySelectorAll('h2')[2]
+ console.log(headingThree)
+  headingThree.addEventListener('mouseover', function(){
+       headingThree.style.color='red'
+       headingThree.addEventListener('mouseout',function(){
+         headingThree.style.color='black' 
+       })
+  })
+ 
 
 
-const mainTitle= document.querySelector('h1');
-console.log(mainTitle);
-title.style.backgroundColor='red'
+  
+ const headingFour =  document.querySelectorAll('h2')[3]
+ console.log(headingFour)
+  headingFour.addEventListener('mouseover', function(){
+       headingFour.style.color='red'
+       headingFour.addEventListener('mouseout',function(){
+         headingFour.style.color='black' 
+       })
+  })
+ 
 
+
+
+
+const btn= document.getElementsByTagName('button')[0]
+const fireImg = document.querySelector('.firenation-image')
+console.log(fireImg)
+btn.addEventListener('click',function(){
+    fireImg.classList.toggle('show')
+})
+
+
+// const btn= document.getElementsByTagName('button')[0]
+// const waterImg = document.getElementsByClassName('water')[0].lastElementChild
+// // console.log(waterImg)
+// btn.addEventListener('click',function(){
+//      waterImg.classList.toggle('show')
+// })
+
+
+// const fBtn= document.getElementsByTagName('button')[1]
+// console.log(fBtn)
+// const fireImg = document.getElementsByClassName('fire')[0].lastElementChild
+// console.log(fireImg)
+// // fBtn.addEventListener('click',function(){
+// //      fireImg.classList.toggle('show')
+// // })
+
+const waterBtn= document.getElementsByTagName('button')[1]
+const waterImg = document.querySelector('.waternation-image')
+console.log(waterImg)
+waterBtn.addEventListener('click',function(){
+    waterImg.classList.toggle('show')
+})
+
+
+// const fBtn= document.getElementsByTagName('button')[1]
+// const fireImg = document.querySelector('.fire-image')
+// console.log(fireImg)
+// fBtn.addEventListener('click',function(){
+//     fireImg.classList.toggle('show')
+// })
+
+
+const airBtn= document.getElementsByTagName('button')[2]
+const airImg = document.querySelector('.airnation-image')
+console.log(airImg)
+airBtn.addEventListener('click',function(){
+    airImg.classList.toggle('show')
+})
+
+const earthBtn= document.getElementsByTagName('button')[3]
+const earthImg = document.querySelector('.earthnation-image')
+console.log(airImg)
+earthBtn.addEventListener('click',function(){
+    earthImg.classList.toggle('show')
+})
