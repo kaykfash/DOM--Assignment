@@ -108,3 +108,6 @@ console.log(airImg)
 earthBtn.addEventListener('click',function(){
     earthImg.classList.toggle('show')
 })
+
+
+
